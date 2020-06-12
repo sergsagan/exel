@@ -28,7 +28,6 @@ module.exports = {
   output: {
     filename: fileName('js'),
     path: path.resolve(__dirname, 'dist')
-
   },
   resolve: {
     extensions: ['.js'],
