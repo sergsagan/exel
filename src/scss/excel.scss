@@ -1,0 +1,15 @@
+.excel {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 300px;
+  margin: 0 auto;
+
+  position: relative;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
