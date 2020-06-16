@@ -2,5 +2,64 @@
 @import "mixins";
 
 .table {
+  padding-bottom: 2px;
+  overflow-x: auto;
 
+  &__row {
+    display: flex;
+    flex-direction: row;
+    height: $row-height;
+    min-height: 20px;
+  }
+
+  &__row-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $info-cell-width;
+    height: 100%;
+
+    background: #f8f9fa;
+    border: 1px solid $border-color;
+    border-top: none;
+  }
+
+  &__row-data {
+    display: flex;
+  }
+
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $cell-width;
+    min-width: 40px;
+    height: 100%;
+
+    background: #f8f9fa;
+    border: 1px solid $border-color;
+    border-top: none;
+    border-left: none;
+  }
+
+  .cell {
+    width: $cell-width;
+    min-width: 40px;
+    height: 100%;
+    padding: 5px;
+
+    color: #111111;
+
+    border: 1px solid #e2e3e3;
+    border-top: none;
+    border-left: none;
+    white-space: nowrap;
+    outline: none;
+
+    &--selected {
+      border: none;
+      outline: 2px solid #3c74ff;
+      z-index: 2;
+    }
+  }
 }
