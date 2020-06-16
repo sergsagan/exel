@@ -8,6 +8,7 @@
   margin: 0 auto;
 
   position: relative;
+  color: #888888;
 
   &__header {
     position: absolute;
@@ -19,6 +20,13 @@
   &__toolbar {
     position: absolute;
     top: $header-height;
+    right: 0;
+    left: 0;
+  }
+
+  &__formula {
+    position: absolute;
+    top: $header-height + $toolbar-height;
     right: 0;
     left: 0;
   }
