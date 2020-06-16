@@ -1,11 +1,11 @@
-@mixin button($color: rgb(0, 0, 0)) {
+@mixin button($color: rgba(0, 0, 0, .7)) {
   display: inline-block;
   min-width: 24px;
   height: 24px;
   padding: 3px;
 
   position: relative;
-  color: $color;
+  color: rgba(0, 0, 0, .7);
   text-align: center;
 
   & i {
@@ -18,5 +18,6 @@
 
   &:hover {
     cursor: pointer;
+    color: $color;
   }
 }

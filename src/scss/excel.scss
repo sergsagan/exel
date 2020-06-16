@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .excel {
   width: 100%;
   max-width: 1920px;
@@ -9,6 +12,13 @@
   &__header {
     position: absolute;
     top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &__toolbar {
+    position: absolute;
+    top: $header-height;
     right: 0;
     left: 0;
   }
