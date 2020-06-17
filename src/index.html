@@ -10,79 +10,31 @@
     <title>Pure javascript exel</title>
 </head>
 <body>
-<div id="app" class="container">
-    <div class="excel">
-        <div class="excel__header header">
-            <input type="text" class="header__input input" value="+ new table"/>
-            <div class="header__buttons">
-                <a href="#" class="button button--delete"><i class="material-icons">delete</i></a>
-                <a href="#" class="button button--exit"><i class="material-icons">exit_to_app</i></a>
+<div id="app">
+    <div class="dashboard">
+        <div class="dashboard__header">
+            <h1>Excel Dashboard</h1>
+        </div>
+        <div class="dashboard__new">
+            <div class="dashboard__view">
+                <a href="#" class="dashboard__create">New table</a>
             </div>
         </div>
-        <div class="excel__toolbar toolbar">
-            <a href="#" class="button"><i class="material-icons">format_size</i></a>
-            <a href="#" class="button"><i class="material-icons">format_bold</i></a>
-            <a href="#" class="button"><i class="material-icons">format_italic</i></a>
-            <a href="#" class="button"><i class="material-icons">format_underlined</i></a>
-            <a href="#" class="button"><i class="material-icons">format_align_left</i></a>
-            <a href="#" class="button"><i class="material-icons">format_align_center</i></a>
-            <a href="#" class="button"><i class="material-icons">format_align_right</i></a>
-        </div>
-        <div class="excel__formula formula">
-            <div class="formula__info">fx</div>
-            <div class="formula__input" contenteditable="true" spellcheck="false"></div>
-        </div>
-        <div class="excel__table table">
-            <div class="table__row">
-                <div class="table__row-info"></div>
-                <div class="table__row-data">
-                    <div class="column">A</div>
-                    <div class="column">B</div>
-                    <div class="column">C</div>
-                    <div class="column">D</div>
-                    <div class="column">E</div>
-                </div>
+        <div class="dashboard__table dashboard__view">
+            <div class="dashboard__list-header">
+                <span>Name</span>
+                <span>opening date</span>
             </div>
-            <div class="table__row">
-                <div class="table__row-info">1</div>
-                <div class="table__row-data">
-                    <div class="cell cell--selected" contenteditable="true">A1</div>
-                    <div class="cell" contenteditable="true">B1</div>
-                    <div class="cell" contenteditable="true">C1</div>
-                    <div class="cell" contenteditable="true">D1</div>
-                    <div class="cell" contenteditable="true">E1</div>
-                </div>
-            </div>
-            <div class="table__row">
-                <div class="table__row-info">2</div>
-                <div class="table__row-data">
-                    <div class="cell" contenteditable="true">A2</div>
-                    <div class="cell" contenteditable="true">B2</div>
-                    <div class="cell" contenteditable="true">C2</div>
-                    <div class="cell" contenteditable="true">D2</div>
-                    <div class="cell" contenteditable="true">E2</div>
-                </div>
-            </div>
-            <div class="table__row">
-                <div class="table__row-info">3</div>
-                <div class="table__row-data">
-                    <div class="cell" contenteditable="true">A3</div>
-                    <div class="cell" contenteditable="true">B3</div>
-                    <div class="cell" contenteditable="true">C3</div>
-                    <div class="cell" contenteditable="true">D3</div>
-                    <div class="cell" contenteditable="true">E3</div>
-                </div>
-            </div>
-            <div class="table__row">
-                <div class="table__row-info">4</div>
-                <div class="table__row-data">
-                    <div class="cell" contenteditable="true">A4</div>
-                    <div class="cell" contenteditable="true">B4</div>
-                    <div class="cell" contenteditable="true">C4</div>
-                    <div class="cell" contenteditable="true">D4</div>
-                    <div class="cell" contenteditable="true">E4</div>
-                </div>
-            </div>
+            <ul class="dashboard__list">
+                <li class="dashboard__record">
+                    <a href="#">last table</a>
+                    <span class="data">20.10.2020</span>
+                </li>
+                <li class="dashboard__record">
+                    <a href="#">Next table</a>
+                    <span class="data">25.10.2020</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
