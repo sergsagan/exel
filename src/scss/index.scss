@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "~normalize.css";
+
+@import "header";
+@import "toolbar";
+@import "formula";
+@import "table";
+@import "excel";
+@import "dashboard";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}

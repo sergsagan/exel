@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+.excel {
+  width: 100%;
+  max-width: 100%;
+  min-width: 300px;
+  height: 100%;
+  margin: 0 auto;
+
+  position: relative;
+  color: #888888;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &__toolbar {
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    left: 0;
+  }
+
+  &__formula {
+    position: absolute;
+    top: $header-height + $toolbar-height;
+    right: 0;
+    left: 0;
+  }
+
+  &__table {
+    position: absolute;
+    top: $header-height + $toolbar-height + $formula-height;
+    right: 0;
+    left: 0;
+  }
+}
