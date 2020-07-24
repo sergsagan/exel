@@ -10,7 +10,10 @@ const isDev = !isProd;
 const isLoaders = () => {
   const loaders = [{
     loader: 'babel-loader',
-    options: {presets: ['@babel/preset-env']}
+    options: {
+      presets: ['@babel/preset-env'],
+      plugins: ['@babel/plugin-proposal-class-properties']
+    }
   }];
 
   if (isDev) {

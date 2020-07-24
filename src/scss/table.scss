@@ -5,6 +5,11 @@
   padding-bottom: 2px;
   overflow-x: auto;
 
+  position: absolute;
+  top: $header-height + $toolbar-height + $formula-height;
+  right: 0;
+  left: 0;
+
   &__row {
     display: flex;
     flex-direction: row;
